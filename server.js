@@ -20,7 +20,7 @@ app.get('/getmeme', (req, res) => {
 app.listen(3000, () => {
 	console.log('Server running on port 3000');
 });
-
+// TODO - add most recent memes, add wordlist, more templates
 async function randomTemplate(name, cb) {
 	const goproc = spawn('meme_generator.exe', [`memes/templates/`, 'memes/generated/', name], (err, stdout, stderr) => {
 		if (err) throw err;

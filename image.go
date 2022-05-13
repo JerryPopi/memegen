@@ -48,6 +48,8 @@ func main() {
 	
 	S := float64(imgWidth)
 	n := 6 // "stroke" size
+
+	// TODO - random text ot wordlist0
 	msg := "Obicham altki mnogo mnogo mnogo mnogo"
 
 	if err := dc.LoadFontFace("impact.ttf", 40); err != nil {
